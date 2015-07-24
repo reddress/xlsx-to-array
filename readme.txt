@@ -22,6 +22,11 @@ USAGE
 Include a file input element in your HTML. Then, add the xlsx.core.min.js
 and xlsx-to-array.js scripts.
 
+The main function is xlsxToArray.parse, which takes the change event parameter
+from the file input, and a callback function.
+
+The callback function operates on the header array and row data array.
+
 See index.html and ui.js as an example.
 
 var fileInput = document.getElementById("fileInput");
@@ -31,6 +36,7 @@ fileInput.addEventListener("change", function(e) {
 
 function processData(header, rows) {
   console.log(header);
+  
   for (var i = 0, len = rows.length; i < len; i++) {
     console.log(rows[i]["Name"]);
   }
