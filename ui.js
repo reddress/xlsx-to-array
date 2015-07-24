@@ -5,9 +5,12 @@ fileInput.addEventListener("change", function(e) {
   xlsxToArray.parse(e, processData);
 });
 
+var a;
+
 function processData(header, rows) {
   console.log(header);
   for (var i = 0, len = rows.length; i < len; i++) {
     console.log(rows[i]["Name"]);
   }
+  a = rows;
 }
