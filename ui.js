@@ -1,9 +1,13 @@
 "use strict";
 
 var fileInput = document.getElementById("fileInput");
-fileInput.addEventListener("change", function(e) { xlsxToArray(e, useArray); });
+fileInput.addEventListener("change", function(e) {
+  xlsxToArray.parse(e, processData);
+});
 
-function useArray(header, arr) {
+function processData(header, rows) {
   console.log(header);
-  console.log(arr[0]["Fruits and Vegetables"]);
+  for (var i = 0, len = rows.length; i < len; i++) {
+    console.log(rows[i]["Name"]);
+  }
 }
