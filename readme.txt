@@ -9,8 +9,8 @@ The input XLSX spreadsheet must be formatted with the header names in the
 first row and data in the following rows.
 
 Date      Name   Item quantity  Total price   Average
-23/7/15   Joe    32             200.13        6.254063
-15/2/14   Jim    7              1             0.142856
+23/7/15   Joe    32             200.13        6.25406
+15/2/14   Jim    7              1             0.14285
 
 If a column header is blank, the entire column is ignored.
 If a column header is repeated, the rightmost value is used.

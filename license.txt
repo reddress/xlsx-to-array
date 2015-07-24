@@ -45,3 +45,7 @@ Licensed under the Apache License, Version 2.0
 Except where noted, this license applies to any and all software programs and
 associated documentation files created by the Original Author and distributed
 with the Software:
+
+'jszip.js' is a modified version of JSZip, Copyright (c) Stuart Knightley,
+David Duponchel, Franz Buchinger, Antonio Afonso.  JSZip is dual licensed
+and is used according to the terms of the MIT License.
